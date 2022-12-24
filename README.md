@@ -6,7 +6,7 @@ This project aims at compressing all bars in a song, and studies the compressed 
 
 This repository contains code for the PCA, NMF, and Autoencoders, developed in PyTorch, and segmentation methods based on autosimilarity segmentation, as presented in [1].
 
-It will soon de uploaded on PyPi, for pip install In the meantime, you can download the source files.
+It can be installed with pip usin `pip install barmuscomp`.
 
 This is a first release, and may contain bug. Comments are welcomed!
 
