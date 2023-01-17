@@ -20,6 +20,8 @@ This code was developed with Python 3.8.5, and some external libraries detailed 
 
 3 tutorial notebooks are available in the folder "Notebooks", and present the different compression methods on the song 'Come Together'.
 
+They are only present if you downloaded the project from git (e.g. https://gitlab.inria.fr/amarmore/barmuscomp), and are not available in the pip version (which is in general not accessible easily in the file tree).
+
 ## How to cite ##
 
 You should cite the package `BarMusComp`, available on HAL (https://hal.archives-ouvertes.fr/hal-03782914).
