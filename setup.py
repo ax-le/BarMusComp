@@ -26,7 +26,7 @@ setuptools.setup(
     install_requires=[
         'as_seg',
         'librosa >= 0.8.0',
-        'madmom >= 0.16.1',
+        'madmom @ https://github.com/CPJKU/madmom/tarball/master#egg=madmom-0.17dev',
         'matplotlib',
         'mir_eval >= 0.6',
         'mirdata >= 0.3.3',
