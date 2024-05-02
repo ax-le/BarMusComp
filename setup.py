@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="barmuscomp",
-    version="0.1.3",
+    version="0.1.4",
     author="Marmoret Axel",
     author_email="axel.marmoret@irisa.fr",
     description="Package for barwise compression applied on musical segmentation.",
@@ -39,5 +39,4 @@ setuptools.setup(
         'tensorly >= 0.5.1',
         'torch >= 1.8.0'
     ],
-    python_requires='>3.7',
 )
