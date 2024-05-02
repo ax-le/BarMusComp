@@ -34,7 +34,7 @@ setuptools.setup(
         'numpy >= 1.18.2',
         'pandas',
         'scipy >= 1.4.1',
-        'sklearn',
+        'scikit-learn',
         'soundfile',
         'tensorly >= 0.5.1',
         'torch >= 1.8.0'
