@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="barmuscomp",
-    version="0.1.4",
+    version="0.1.5",
     author="Marmoret Axel",
     author_email="axel.marmoret@irisa.fr",
     description="Package for barwise compression applied on musical segmentation.",
