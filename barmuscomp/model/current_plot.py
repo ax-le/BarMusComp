@@ -145,9 +145,6 @@ def plot_audio_diff_ntd_ae_in_dataframe(signal_ntd, signal_ae):
     df_html = df.T.to_html(escape=False, index=False)
     ipd.display(ipd.HTML(df_html))
     
-import pandas as pd
-import IPython.display as ipd
-
 def plot_audio_diff_beta_in_dataframe(signal_beta2, signal_beta1, signal_beta0):
     """
     Plots the different reconstruction with different beta values in a dataframe.
