@@ -9,3 +9,12 @@ Module defining specific errors to be raised
 
 # %% Load everything from as_seg
 from as_seg.model.errors import *
+
+
+class UndesiredScenarioException(BaseException): pass
+class MaskAlmostOneException(UndesiredScenarioException): pass
+class PatternNeverUsedException(UndesiredScenarioException): pass
+
+class NotImplementedException(BaseException): pass
+
+
