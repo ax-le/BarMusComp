@@ -9,7 +9,7 @@ Ugly code.
 """
 import as_seg.autosimilarity_computation as as_comp
 from barmuscomp.model.current_plot import *
-import barmuscomp.model.pattern_study as ps
+import barmuscomp.model.pattern_study as ps # TODO: update with last version, i.e. factorisation to signal and spectrogram to signal
 
 import numpy as np
 import pandas as pd
