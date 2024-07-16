@@ -40,5 +40,4 @@ setuptools.setup(
         'tensorly >= 0.5.1',
         'torch >= 1.8.0'
     ],
-    python_requires='>=3.7.*',
 )
