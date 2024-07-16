@@ -10,10 +10,8 @@ See [1 - Chapter 5.4] or [2] for more information.
 
 References
 ----------
-[1] Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure, 
-PhD Thesis Marmoret Axel 
-(not uploaded yet but will be soon!)
-(You should check the website hal.archives-ouvertes.fr/ in case this docstring is not updated with the reference.)
+[1] Marmoret, A. (2022). Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure (Doctoral dissertation, Université Rennes 1).
+https://theses.hal.science/tel-04589687
 
 [2] Marmoret, A., Cohen, J.E, and Bimbot, F., "Barwise Compression Schemes 
 for Audio-Based Music Structure Analysis"", in: 19th Sound and Music Computing Conference, 
@@ -23,7 +21,7 @@ SMC 2022, Sound and music Computing network, 2022.
 import as_seg.barwise_input as bi
 import barmuscomp.ae_utils as ae_utils
 from barmuscomp.model.early_stopping import EarlyStopping
-import barmuscomp.model.current_plot as current_plot
+import barmuscomp.model.common_plot as common_plot
 import barmuscomp.model.errors as err
 
 import numpy as np
@@ -209,7 +207,7 @@ class GenericAutoencoder(nn.Module):
                 print('Epoch: {} \tCumulated reconstruction loss: {:.6f}'.format(epoch, total_loss_epoch))
                 if epoch%50 == 0:
                     projection = self.get_latent_projection(data_loader)
-                    current_plot.plot_latent_space(projection, labels = labels)
+                    common_plot.plot_latent_space(projection, labels = labels)
                     
             if es.step(total_loss_epoch): # Checks if loss has decreased, to stop the optimization if performances don't increase for early_stop_patience epochs.
                 if verbose:
@@ -686,7 +684,7 @@ class ConvolutionalAutoencoderTriplet(ConvolutionalAutoencoder):
                 
                 if epoch%50 == 0:
                     projection = self.get_latent_projection(data_loader)
-                    current_plot.plot_latent_space(projection, labels = labels)
+                    common_plot.plot_latent_space(projection, labels = labels)
                     
             if es.step(total_loss_epoch):
                 if verbose:
@@ -811,7 +809,7 @@ class ConvolutionalAutoencoderSparse(ConvolutionalAutoencoder):
                 print('Epoch: {} \tCumulated reconstruction loss: {:.6f}'.format(epoch, total_loss_epoch))
                 if epoch%50 == 0:
                     projection = self.get_latent_projection(data_loader)
-                    current_plot.plot_latent_space(projection, labels = labels)
+                    common_plot.plot_latent_space(projection, labels = labels)
                     
             if es.step(total_loss_epoch):
                 if verbose:

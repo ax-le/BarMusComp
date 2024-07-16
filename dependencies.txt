@@ -1,4 +1,5 @@
  - as_seg
+ - base_audio
  - librosa
  - madmom
  - mir_eval
@@ -7,6 +8,5 @@
  - numpy
  - pandas (for tables in the notebooks, not used otherwise).
  - sklearn
- - soundfile
  - tensorly
  - torch

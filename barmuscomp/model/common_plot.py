@@ -5,10 +5,6 @@ Created on Fri Feb 22 16:29:17 2019
 @author: amarmore
 
 Defining common plotting functions.
-
-NB: This module's name actually comes from an incorrect translation
-from the french "courant" into "current", instead of "common".
-Please excuse me for this translation.
 """
 
 import as_seg.autosimilarity_computation as as_comp
@@ -21,7 +17,7 @@ import pandas as pd
 import IPython.display as ipd
 
 # %% Load everything from as_seg
-from as_seg.model.current_plot import *
+from as_seg.model.common_plot import *
 
 # %% NTD specific
 def plot_me_this_tucker(factors, core, cmap = cm.Greys):

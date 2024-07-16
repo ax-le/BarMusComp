@@ -89,6 +89,7 @@ def NTD_decomp_as_script(persisted_path, persisted_arguments, tensor_spectrogram
         factors_path = "{}/factors{}".format(path_for_ntd, persisted_arguments)
         np.save(factors_path, factors)
         return core, factors
+
     
 # %% SSAE specific 
 def load_or_save_convolutional_projection(persisted_path, song_name, data_loader, dim_latent_space, lr = 1e-3, n_epochs = 1000, feature = "pcp", hop_length = 32, subdivision_bars = 96, freq_len = 12, compute_if_not_persisted = True):

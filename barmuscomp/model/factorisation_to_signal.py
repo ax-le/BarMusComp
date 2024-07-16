@@ -1,6 +1,11 @@
-import barmuscomp.model.barwise_input as barwise_input
+"""
+Compute the signal from the different factorisation methods (NMF, NTD)
+"""
+
+import as_seg.barwise_input as barwise_input
+import base_audio.audio_helper as audio_helper
+
 import barmuscomp.model.spectrogram_to_signal as spectrogram_to_signal
-import barmuscomp.model.audio_helper as audio_helper
 import barmuscomp.model.errors as err
 
 import numpy as np
