@@ -12,10 +12,8 @@ See [1 - Chapter 4] or [2] for details on NTD, and [1, Chap 5.3] or [3] for deta
 
 References
 ----------
-[1] Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure, 
-PhD Thesis Marmoret Axel 
-(not uploaded yet but will be soon!)
-(You should check the website hal.archives-ouvertes.fr/ in case this docstring is not updated with the reference.)
+[1] Marmoret, A. (2022). Unsupervised Machine Learning Paradigms for the Representation of Music Similarity and Structure (Doctoral dissertation, Université Rennes 1).
+https://theses.hal.science/tel-04589687
 
 [2] Marmoret, A., Cohen, J., Bertin, N., & Bimbot, F. (2020, October). 
 Uncovering Audio Patterns in Music with Nonnegative Tucker Decomposition for Structural Segmentation. 
@@ -141,7 +139,7 @@ def ntd_computation(tensor_spectrogram, core_dimensions, beta = 2, init = "tucke
                             sparsity_coefficients = [None, None, None, None], normalize = [True, True, False, True], mode_core_norm = 2,
                             deterministic = True)
     else:
-        core, factors = NTD.ntd_mu(tensor_spectrogram, ranks = core_dimensions, init = init, verbose = False, beta = beta, n_iter_max=1000,
+        core, factors = NTD.ntd_mu(tensor_spectrogram, ranks = core_dimensions, init = init, verbose = False, beta = beta, n_iter_max=100,
                             sparsity_coefficients = [None, None, None, None], normalize = [True, True, False, True], mode_core_norm = 2,
                             deterministic = True)
     return core, factors
